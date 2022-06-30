@@ -17,7 +17,7 @@ namespace RazorPageMovie.Models
                 }
 
                 // Look for any movies.
-                if (context.Movie.Any())
+                if (context.Movie.Count() > 1)
                 {
                     return;   // DB has been seeded
                 }
